@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import bgImg from '../../assets/images/register.jpg'
 import logo from '../../assets/images/logo.png'
 import { useContext } from 'react'
-import { AuthContext } from '../../providers/AuthProvider'
+import  AuthContext  from '../../provider/Authprovider'
 import toast from 'react-hot-toast'
 const Registration = () => {
   const navigate = useNavigate()

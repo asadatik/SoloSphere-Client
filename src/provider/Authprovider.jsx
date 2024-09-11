@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from 'react'
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
-  getAuth,
+
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
