@@ -6,13 +6,24 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 const TabCategories = () => {
   const [jobs, setJobs] = useState([])
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios(`${import.meta.env.VITE_API_URL}/jobs`)
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const { data } = await axios(`${import.meta.env.VITE_API_URL}/jobs`)
+  //     setJobs(data)
+  //   }
+  //   getData()
+  // }, [])
+  useEffect( ()=> {
+    const Getdata = async ()=> {
+      const {data} = await axios (    `${import.meta.env.VITE_API_URL}/jobs`       )
       setJobs(data)
     }
-    getData()
-  }, [])
+    Getdata()
+  }
+    
+
+    ,[]
+  )
 
   return (
     <Tabs>
